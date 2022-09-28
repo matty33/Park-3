@@ -75,6 +75,10 @@ const Home = (props) => {
   ) => {
     await startUpload(videoObject, videoFileName, tusEndpoint);
     console.log("Using description " + description);
+    console.log("Using id", _id);
+    console.log("Using video object "+ videoObject);
+    console.log("Using tusEndpoint "+tusEndpoint);
+
     requestData(_id, description, contract, account);
     setuploadSucess(true);
   };
